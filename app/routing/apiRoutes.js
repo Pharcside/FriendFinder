@@ -2,23 +2,23 @@ var friends = require('../data/friends.js');
 
 // Routing the apiRoutes with the app.get and app.post functions
 module.exports = function (app) {
-   
+
     app.get('/api/friends', function (req, res) {
         res.json(friends);
     });
-    
+
     app.post('/api/friends', function (req, res) {
-       
+
         var bestMatch = {
             name: "",
             photo: "",
             friendDifference: 1000
         };
 
-       
+
         var userData = req.body;
         var userScores = userData.scores;
-        
+
         var userName = userData.name;
         var userPhoto = userData.photo;
 
