@@ -19,8 +19,8 @@ module.exports = function (app) {
         var userData = req.body;
         var userScores = userData.scores;
 
-        var userName = userData.name;
-        var userPhoto = userData.photo;
+     //   var userName = userData.name;
+     //   var userPhoto = userData.photo;
 
         // The variable used to calculate the difference b/n the user's socres and the scores of each user
         var totalDifference = 0;
